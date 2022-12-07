@@ -1,0 +1,25 @@
+.adminstudent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  background: linear-gradient(180deg, rgb(249, 204, 204) 0%, #ffffff 100%);
+  width: 90%;
+  padding-top: 5em;
+  padding-bottom: 5em;
+
+  div {
+    width: 80%;
+  }
+
+  button {
+    padding: 1em;
+  }
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(249, 204, 204);
+}

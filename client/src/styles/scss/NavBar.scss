@@ -1,0 +1,155 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #565656;
+  height: 9em;
+
+  h1 {
+    color: #00595a;
+    text-shadow: 1px 1px 2px black;
+    margin-left: 1em;
+    font-size: xx-large;
+  }
+
+  h4 {
+    color: #00595a;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .header {
+    background-color: #d66464;
+    border: 0.1em solid #d66464;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 3px 2px 2px rgb(91, 44, 39);
+    cursor: pointer;
+  }
+
+  .loginDiv {
+    display: flex;
+  }
+
+  li {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #d66464;
+    margin:0 0.3em 0.3em 0;
+    border-radius:1.2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#252525;
+    background-color: #d66464;
+    text-align:center;
+    font-size: medium;
+    margin: 1em;
+    box-shadow: 6px 2px 2px rgb(105, 64, 64);
+    cursor:pointer;
+    transition: all 0.2s;
+  }
+  
+  li:hover {
+    color:#000000;
+    background-color:#802d2d;
+    border:0.1em solid #802d2d;
+    box-shadow: 8px 5px 5px rgb(83, 0, 0);
+  }
+
+  .optionsButton {
+    all: unset;
+    cursor: pointer;
+    padding: 1em;
+    margin-right: 1em;
+    width: 4em;
+  }
+
+  .loginButton, .logoutButton {
+    align-self: center;
+    margin: 1em;
+    padding: 1em;
+    cursor:pointer;
+    color: rgb(91, 44, 39);
+    font-weight: 600;
+    background-color: #4ad092;
+    border:0.1em solid #4ad092;
+    border-radius:1.2em;
+    box-shadow: 3px 2px 2px #1e8a57;
+  }
+
+  .loginButton:hover, .logoutButton:hover {
+    background-color:#25aa6c;
+    border:0.1em solid #1e8a57;
+    box-shadow: 5px 3px 3px #1e8a57;
+  }
+
+  i {
+    transition: font-size .1s ease;
+  }
+
+  i:hover {
+    font-size: 3em;
+  }
+
+  ul {
+    display: block;
+    position: relative;
+    right: -200px;
+    margin-bottom: 0;
+    opacity: 0;
+    transition: all .5s ease;
+  }
+}
+
+.show {
+  right: 0px;
+  opacity: 1;
+}
+
+
+.wave{
+  height: 90px;
+  position: relative;
+  background: linear-gradient(90deg, #27b966 0%, #0f6147 100%);
+}
+
+/* Wave text css */
+.wave {
+  color:#fff;
+  text-align:center;
+  font-weight:bold;
+  font-size:24px;
+  padding-top:25px;
+  padding-bottom:25px;
+  
+}
+/* */
+
+
+.wave::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+   radial-gradient(circle at 10px -5px, transparent 12px, rgb(249, 204, 204) 13px);
+}
+.wave::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 80px 40px;
+  background-image:
+    radial-gradient(circle at 10px 15px, rgb(249, 204, 204) 12px, transparent 13px);
+}

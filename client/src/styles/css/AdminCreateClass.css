@@ -1,0 +1,100 @@
+.admincreateclass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  background: linear-gradient(180deg, rgb(249, 204, 204) 0%, #ffffff 100%);
+  width: 90%;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.admincreateclass form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+.admincreateclass form div {
+  margin: 0.5em;
+}
+.admincreateclass button {
+  margin: 1em;
+  padding: 1em;
+  cursor: pointer;
+  background-color: #4ad092;
+  border: 0.1em solid #4ad092;
+  border-radius: 1.2em;
+  box-shadow: 3px 2px 2px #1e8a57;
+}
+.admincreateclass button:hover {
+  background-color: #1e8a57;
+  border: 0.1em solid #1e8a57;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(249, 204, 204);
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=AdminCreateClass.css.map */

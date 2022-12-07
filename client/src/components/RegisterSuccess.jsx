@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import timeConvert from '../helpers/timeConvert';
 
 import '../styles/css/RegisterSuccess.css';
 
@@ -16,7 +17,7 @@ export default function RegisterSuccess(props) {
     };
     const formatTime = (dateStr) => {
       const tempDate = dateStr.split(/[-T.]+/);
-      return `${tempDate[3].split(':').slice(0, 2).join(':')}${Number(tempDate[3].split(':')[0]) > 11 || Number(tempDate[3].split(':')[0]) === 24 ? "pm" : "am"}`;
+      return timeConvert(tempDate[3]);
     };
 
     axios.get(`/classes/${props.classId}`)
